@@ -25,12 +25,9 @@
           <a href="#" class="navbar-brand">
             <img src="images/Hamburger bar.svg" alt="hamburger-menu">
           </a>
-            <!-- <button class="navbar-toggler">
-              <i class="fas fa-bars"></i>
-            </button> -->
       
           <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav animation-target">
               <li class="current"><a href="meny.html" class="nav-link">Meny</a><li>
               <li><a href="./boka-bord.html" class="nav-link">Boka bord</a></li>
               <li><a href="./om-oss.html" class="nav-link">Om oss</a></li>
@@ -42,17 +39,26 @@
         </div>
     </nav>
     <div id="mySidenav" class="sidenav">
-      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-      <a href="#"><img src="https://www.vectorlogo.zone/logos/twitter/twitter-official.svg" alt="twitter">
-      <a href="#"><img src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" alt="instagram">
-      <a href="#"><img src="https://www.vectorlogo.zone/logos/facebook/facebook-tile.svg" alt="facebook">
-      <a href="#"><img src="https://www.vectorlogo.zone/logos/pinterest/pinterest-icon.svg" alt="pinterest">
-      <a href="#"><img src="https://www.vectorlogo.zone/logos/tripadvisor/tripadvisor-icon.svg" alt="tripadvisor">
+      <a href="#">
+        <img src="http://www.vectorlogo.zone/logos/twitter/twitter-official.svg" alt="twitter">
+      </a>
+      <a href="#">
+        <img src="http://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" alt="instagram">
+      </a>
+      <a href="#">
+        <img src="http://www.vectorlogo.zone/logos/facebook/facebook-tile.svg" alt="facebook">
+      </a>
+      <a href="#">
+        <img src="http://www.vectorlogo.zone/logos/pinterest/pinterest-icon.svg" alt="pinterest">
+      </a>
+      <a href="#">
+        <img src="http://www.vectorlogo.zone/logos/tripadvisor/tripadvisor-icon.svg" alt="tripadvisor">
+      </a>
       
      
     </div>
     <aside class="overlay">
-      <ul class="overlay-ul">
+      <ul class="overlay-ul animation-target">
         <div class="overlay-close stretched-text">x</div>
         <li><a href="./meny.html" class="ham1">Meny</a></li>
         <li><a href="./boka-bord.html" class="ham2">Boka bord</a></li>
@@ -105,11 +111,8 @@
       </div>
     </div>  
       <script>
-      // Get the modal
-      var modal = document.getElementById('id01');
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
+      let modal = document.getElementById('id01');
+        window.onclick = function(event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }

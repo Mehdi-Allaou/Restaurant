@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="./hittaHit.css">
+    <link rel="stylesheet" href="./meny.css">
+    <script src="./script.js" defer></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" 
+          type="text/javascript"></script>
+    <title>Hitta hit</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          <div class="name">
+            <div class="logo-img">
+              <a href="startsida.html">
+                <img src="images/logobild.jpeg" width="25px" alt="image">
+              </a>
+            </div>
+             <a href="startsida.html" class="navhead-text"><h2>Restaurang Spice</h2></a>
+          </div>  
+          <a href="#" class="navbar-brand">
+            <img src="images/Hamburger bar.svg" alt="hamburger-menu">
+          </a>
+            <!-- <button class="navbar-toggler">
+              <i class="fas fa-bars"></i>
+            </button> -->
+      
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="current"><a href="meny.html" class="nav-link">Meny</a><li>
+                <li><a href="./boka-bord.html" class="nav-link">Boka bord</a></li>
+                <li><a href="./om-oss.html" class="nav-link">Om oss</a></li>
+                <li><a href="./hitta-hit.html" class="nav-link">Hitta hit</a></li>
+                <li><a href="./galleri.html" class="nav-link">Galleri</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+          <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+          <a href="#"><img src="https://www.vectorlogo.zone/logos/twitter/twitter-official.svg" alt="twitter">
+          <a href="#"><img src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" alt="instagram">
+          <a href="#"><img src="https://www.vectorlogo.zone/logos/facebook/facebook-tile.svg" alt="facebook">
+          <a href="#"><img src="https://www.vectorlogo.zone/logos/pinterest/pinterest-icon.svg" alt="pinterest">
+          <a href="#"><img src="https://www.vectorlogo.zone/logos/tripadvisor/tripadvisor-icon.svg" alt="tripadvisor">
+          
+         
+        </div>
+        <aside class="overlay">
+          <ul class="overlay-ul">
+            <div class="overlay-close stretched-text">x</div>
+            <li><a href="./meny.html" class="ham1">Meny</a></li>
+            <li><a href="./boka-bord.html" class="ham2">Boka bord</a></li>
+            <li><a href="./om-oss.html" class="ham3">Om oss</a></li>
+            <li><a href="./hitta-hit.html" class="ham4">Hitta hit</a></li>
+            <li><a href="./galleri.html" class="ham5">Galleri</a></li>
+          </ul>
+        </aside>
+        <main class="meny-container">
+          <div class="content-head"> <br><br>
+            <h2>Hitta hit</h2>
+            <div class="contentText">
+              <p>
+                Cykla, promenera längs kajerna, åk bil eller ta bussen från Slussen. Med SL:s pendelbåt från Nybroplan tar det 20 minuter till hållplats Saltsjöqvarn där SPICE Restaurang ligger i samma byggnad som Elite Hotel Marina Tower. 
+              </p>
+            </div>
+          </div>
+            <div class="mainText">
+              <div id="map">
+                
+                <script type="text/javascript">
+            let locations = [['Restaurang Spice', 59.329094, 18.099431]];
+        
+            let map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 14,
+              center: new google.maps.LatLng(59.329094, 18.099431),
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+        
+            let infowindow = new google.maps.InfoWindow();
+        
+            let marker, i;
+        
+            for (i = 0; i < locations.length; i++) {  
+              marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                map: map
+              });
+        
+              google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                  infowindow.setContent(locations[i][0]);
+                  infowindow.open(map, marker);
+                }
+              })(marker, i));
+            }
+          </script>
+        </div>
+        <h3>Varmt välkommen till oss!</h3>
+      </div>
+      
+    </main>
+
+</body>
+</html>

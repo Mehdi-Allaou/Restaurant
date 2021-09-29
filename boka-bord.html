@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="./meny.css">
+    <link rel="stylesheet" href="bokaBord.css">
+    <script src="./script.js" defer></script>
+
+    <title>Boka bord</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          <div class="name">
+            <div class="logo-img">
+              <a href="startsida.html">
+                <img src="images/logobild.jpeg" width="25px" alt="image">
+              </a>
+            </div>
+             <a href="startsida.html" class="navhead-text"><h2>Restaurang Spice</h2></a>
+          </div>  
+          <a href="#" class="navbar-brand">
+            <img src="images/Hamburger bar.svg" alt="hamburger-menu">
+          </a>
+            <!-- <button class="navbar-toggler">
+              <i class="fas fa-bars"></i>
+            </button> -->
+      
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="current"><a href="meny.html" class="nav-link">Meny</a><li>
+              <li><a href="./boka-bord.html" class="nav-link">Boka bord</a></li>
+              <li><a href="./om-oss.html" class="nav-link">Om oss</a></li>
+              <li><a href="./hitta-hit.html" class="nav-link">Hitta hit</a></li>
+              <li><a href="./galleri.html" class="nav-link">Galleri</a></li>
+            </ul>
+          </div>
+      
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+      <a href="#"><img src="https://www.vectorlogo.zone/logos/twitter/twitter-official.svg" alt="twitter">
+      <a href="#"><img src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" alt="instagram">
+      <a href="#"><img src="https://www.vectorlogo.zone/logos/facebook/facebook-tile.svg" alt="facebook">
+      <a href="#"><img src="https://www.vectorlogo.zone/logos/pinterest/pinterest-icon.svg" alt="pinterest">
+      <a href="#"><img src="https://www.vectorlogo.zone/logos/tripadvisor/tripadvisor-icon.svg" alt="tripadvisor">
+      
+     
+    </div>
+    <aside class="overlay">
+      <ul class="overlay-ul">
+        <div class="overlay-close stretched-text">x</div>
+        <li><a href="./meny.html" class="ham1">Meny</a></li>
+        <li><a href="./boka-bord.html" class="ham2">Boka bord</a></li>
+        <li><a href="./om-oss.html" class="ham3">Om oss</a></li>
+        <li><a href="./hitta-hit.html" class="ham4">Hitta hit</a></li>
+        <li><a href="./galleri.html" class="ham5">Galleri</a></li>
+    </ul>
+    </aside>
+    <main class="meny-container">
+      <div class="content-head"> <br><br>
+        <h2>Boka bord</h2>
+        <p>Välkomna att boka bord via bokningsknappen nedan. Ni är även välkomna att kontakta oss på telefon: <em>08-112112</em></p>
+      </div>
+      <div class="mainText">
+
+      </div>
+    </main>
+    <div class="formbody">
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Boka här</button>
+      
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="formcontainer">
+            <h1>Bokningsförfrågan</h1>
+            <p>Vänligen ange kontaktuppgifter och antalet personer ni vill boka för nedan.</p>
+            <hr>
+            <label for="fullname"><b>Ange för- och efternamn:</b></label>
+            <input type="text" placeholder="Förnamn Efternamn" name="fullname" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Ange e-mail adress" name="email" required>
+      
+            <label for="number"><b>Ange antalet gäster:</b></label>
+            <input type="number" placeholder="Antal gäster" name="antal" required><br>
+            
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Kom ihåg mig
+            </label>
+      
+            <p>Genom att genomföra förfrågan godtar ni härmed villkoren för avbokning, se nedan:</p>
+            <a href="#" style="color:rgb(148, 34, 34)"> Avbokningsvillkor</a>.
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Avbryt</button>
+              <button type="submit" class="signupbtn">Boka</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>  
+      <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+      
+</body>
+</html>

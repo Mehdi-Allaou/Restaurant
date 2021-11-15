@@ -56,7 +56,7 @@ body {
   
   display: flex;
   justify-content: center;
-  margin-bottom: 20%;
+  margin: 5% 0 5% 0;
 }
 .navbar {
   background: #937c7c;
@@ -393,36 +393,15 @@ aside ul li a {
 
 /* ----- Screensize ----- */
 
-/* @media(min-width: 220px) {
-  .container body {
-    max-width: 367px;
-  }
-  .navbar-brand{
-    display: block;
-  }
-  aside ul li a {
-    font-size: 1.5rem;
-    margin-right: 10px;
-    letter-spacing: 3px;
-  }
-  #map, .contentText{
-    max-width: 90%;
-  }
-} */
-
 @media screen and (max-width: 350px) {
 
   .navhead-text {
     font-size: small;
   }
-
-  
 }
 
 @media screen and (max-width: 600px) {
-  /* .container body {
-    max-width: 367px;
-  } */
+
   .navbar-brand{
     display: block;
   }
@@ -433,11 +412,8 @@ aside ul li a {
   }
 }
 
-@media(min-width: 768px) {
-  .container {
-    max-width: 900px;
-    
-  }
+@media screen and (min-width: 768px) {
+ 
   .collapse:not(.show)  {
     display: flex;
   }
@@ -447,23 +423,8 @@ aside ul li a {
   .navbar-nav {
     flex-direction: row;
   }
-  /* .bg-img {
-    margin: 0 5%;
-  } */
-}
-
-@media(min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media(min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-  .navbar-toggler, .navbar-brand{
-    display: none;
+  .bg-img {
+    margin: 5%;
   }
 }
 

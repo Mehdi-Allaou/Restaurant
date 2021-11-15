@@ -1,6 +1,0 @@
-font-style: Helvetica Neue;
-font-weight: Condensed Black;
-font-size: 17px;
-color: #3c3737;
-letter-spacing: 0em;
-line-height: 2.3529411764705883;

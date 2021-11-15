@@ -1,3 +1,8 @@
+
+main {
+font-weight: 10px;
+}
+
 #map {
     display: flex;
     justify-content: center;
@@ -11,3 +16,4 @@
     margin: 30px auto;
     max-width: 500px;;
 }
+
